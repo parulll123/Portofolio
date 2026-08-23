@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fahrul Ridho | Automation Engineering Portfolio</title>
+<meta name="description" content="Portfolio of Fahrul Ridho, Automation Engineering enthusiast specializing in PLC, industrial automation, electronics, IoT, and embedded systems.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Fahrul Ridho | Automation Engineering Portfolio">
+<meta property="og:description" content="Portfolio of Fahrul Ridho, Automation Engineering enthusiast specializing in PLC, industrial automation, electronics, IoT, and embedded systems.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/profile.jpg">
+
+<!-- Favicon placeholder -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%224%22 fill=%22%230B0E11%22/><path d=%22M6 12h3l1.5-4 3 8 1.5-4h3%22 stroke=%22%23E8A33D%22 stroke-width=%221.6%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Skip link -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#hero" class="navbar__logo">
+      <span class="navbar__logo-tag">[ SYS.01 ]</span>
+      FAHRUL RIDHO
+    </a>
+
+    <nav class="navbar__nav" id="navMenu">
+      <a href="#about" class="nav-link" data-section="about"><span class="nav-link__addr">I0.0</span>About</a>
+      <a href="#projects" class="nav-link" data-section="projects"><span class="nav-link__addr">I0.1</span>Projects</a>
+      <a href="#skills" class="nav-link" data-section="skills"><span class="nav-link__addr">I0.2</span>Skills</a>
+      <a href="#experience" class="nav-link" data-section="experience"><span class="nav-link__addr">I0.3</span>Experience</a>
+      <a href="#contact" class="nav-link nav-link--cta" data-section="contact"><span class="nav-link__addr">I0.4</span>Contact</a>
+    </nav>
+
+    <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__content reveal">
+        <p class="eyebrow"><span class="eyebrow__dot"></span>STATUS: OPEN TO WORK</p>
+        <h1 class="hero__name">FAHRUL<br>RIDHO</h1>
+        <p class="hero__headline">Automation Engineering Enthusiast</p>
+        <p class="hero__subheadline">Electrical <span class="dot-sep">•</span> Electronics <span class="dot-sep">•</span> PLC <span class="dot-sep">•</span> Industrial Automation <span class="dot-sep">•</span> IoT</p>
+        <p class="hero__desc">Fresh graduate D4 Teknologi Rekayasa Otomasi Universitas Negeri Jakarta with an interest in automation, electrical systems, electronics, PLC programming, and embedded systems.</p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">
+            View My Projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="assets/CV - Fahrul Ridho Dwinugrohof" class="btn btn--ghost" download>
+            <i class="fa-solid fa-download" aria-hidden="true"></i> Download CV
+          </a>
+        </div>
+
+        <div class="hero__socials">
+          <a href="[INSERT_GITHUB_URL]" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="[INSERT_LINKEDIN_URL]" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:[INSERT_EMAIL]" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal" aria-hidden="true">
+        <svg viewBox="0 0 480 480" class="signal-diagram" id="signalDiagram">
+          <!-- background grid -->
+          <defs>
+            <pattern id="dotgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+              <circle cx="1.2" cy="1.2" r="1.2" fill="var(--border)"></circle>
+            </pattern>
+          </defs>
+          <rect x="0" y="0" width="480" height="480" fill="url(#dotgrid)"></rect>
+
+          <!-- connection paths -->
+          <path class="path path--1" d="M 90 110 C 150 110, 150 240, 210 240" />
+          <path class="path path--2" d="M 210 240 C 260 240, 260 110, 320 110" />
+          <path class="path path--3" d="M 210 240 C 260 240, 260 370, 320 370" />
+          <path class="path path--4" d="M 320 370 C 360 370, 360 240, 400 240" />
+
+          <!-- pulse dots travel along paths -->
+          <circle class="pulse pulse--1" r="3.2"><animateMotion dur="2.6s" repeatCount="indefinite" path="M 90 110 C 150 110, 150 240, 210 240" /></circle>
+          <circle class="pulse pulse--2" r="3.2"><animateMotion dur="2.6s" begin="0.6s" repeatCount="indefinite" path="M 210 240 C 260 240, 260 110, 320 110" /></circle>
+          <circle class="pulse pulse--3" r="3.2"><animateMotion dur="2.6s" begin="1.2s" repeatCount="indefinite" path="M 210 240 C 260 240, 260 370, 320 370" /></circle>
+          <circle class="pulse pulse--4" r="3.2"><animateMotion dur="2.6s" begin="1.8s" repeatCount="indefinite" path="M 320 370 C 360 370, 360 240, 400 240" /></circle>
+
+          <!-- nodes -->
+          <g class="node" transform="translate(90,110)">
+            <circle r="26"></circle>
+            <path class="node__icon" d="M-8,-2 L-3,-2 L0,-9 L4,7 L7,-2 L8,-2" fill="none" />
+            <text y="42" text-anchor="middle" class="node__label">SENSOR</text>
+          </g>
+
+          <g class="node node--core" transform="translate(210,240)">
+            <circle r="34"></circle>
+            <rect x="-11" y="-11" width="22" height="22" rx="3" class="node__chip" />
+            <text y="52" text-anchor="middle" class="node__label">ESP32-C3</text>
+          </g>
+
+          <g class="node" transform="translate(320,110)">
+            <circle r="26"></circle>
+            <path class="node__icon" d="M-8,6 L-8,-2 L-3,-2 L-3,6 M-1,6 L-1,-6 L4,-6 L4,6 M6,6 L6,2 L11,2 L11,6" fill="none" />
+            <text y="42" text-anchor="middle" class="node__label">EDGE AI</text>
+          </g>
+
+          <g class="node" transform="translate(320,370)">
+            <circle r="26"></circle>
+            <path class="node__icon" d="M-9,-6 h18 v9 h-18 z M-9,6 h18" fill="none" />
+            <text y="42" text-anchor="middle" class="node__label">PLC I/O</text>
+          </g>
+
+          <g class="node" transform="translate(400,240)">
+            <circle r="22"></circle>
+            <path class="node__icon" d="M-7,-6 h14 v9 h-14 z M-3,3 v4 M3,3 v4 M-5,7 h10" fill="none" />
+            <text y="38" text-anchor="middle" class="node__label">DASHBOARD</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-hidden="true"><span></span></a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section__inner">
+      <p class="section__eyebrow">// SEC.01 — I0.0</p>
+      <h2 class="section__title">About Me</h2>
+
+      <div class="about__grid">
+        <p class="about__text reveal">
+          Saya merupakan lulusan D4 Teknologi Rekayasa Otomasi Universitas Negeri Jakarta dengan ketertarikan pada bidang engineering dan teknologi. Memiliki pengalaman mengerjakan proyek yang melibatkan perancangan, implementasi, pengujian, dan troubleshooting sistem.
+        </p>
+
+        <dl class="about__specs reveal">
+          <div class="spec">
+            <dt>Education</dt>
+            <dd>D4 Teknologi Rekayasa Otomasi</dd>
+          </div>
+          <div class="spec">
+            <dt>University</dt>
+            <dd>Universitas Negeri Jakarta</dd>
+          </div>
+          <div class="spec">
+            <dt>Focus</dt>
+            <dd>Automation &amp; Electrical Engineering</dd>
+          </div>
+          <div class="spec">
+            <dt>Location</dt>
+            <dd>Indonesia</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section__inner">
+      <p class="section__eyebrow">// SEC.02 — I0.1</p>
+      <h2 class="section__title">Featured Projects</h2>
+
+      <div class="projects__grid">
+
+        <article class="project-card reveal">
+          <div class="project-card__thumb">
+            <img src="assets/projects/project-1.jpg" alt="Sistem monitoring dan deteksi anomali motor 3-phase" loading="lazy" onerror="this.parentElement.classList.add('project-card__thumb--fallback')">
+            <div class="project-card__thumb-fallback" aria-hidden="true">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Monitoring dan Deteksi Anomali Getaran dan Temperatur Motor 3-Phase</h3>
+            <p class="project-card__desc">Sistem monitoring dan deteksi anomali kondisi motor 3-phase menggunakan Edge AI dengan metode K-Means Clustering.</p>
+            <ul class="tag-list">
+              <li>ESP32-C3</li><li>MPU6050</li><li>MAX6675</li><li>K-Means Clustering</li><li>Modbus TCP</li><li>SQLite</li><li>Web Dashboard</li>
+            </ul>
+            <div class="project-card__actions">
+              <a href="[INSERT_PROJECT_LINK]" class="btn btn--small btn--primary">View Project</a>
+              <a href="[INSERT_GITHUB_LINK]" class="btn btn--small btn--ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__thumb">
+            <img src="assets/projects/project-2.jpg" alt="Project PLC dan Industrial Automation" loading="lazy" onerror="this.parentElement.classList.add('project-card__thumb--fallback')">
+            <div class="project-card__thumb-fallback" aria-hidden="true">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">PLC &amp; Industrial Automation</h3>
+            <p class="project-card__desc">Project automation menggunakan PLC dan Factory I/O untuk mengimplementasikan sistem kontrol dan simulasi proses industri.</p>
+            <ul class="tag-list">
+              <li>PLC</li><li>TIA Portal</li><li>Factory I/O</li><li>Ladder Logic</li><li>HMI</li>
+            </ul>
+            <div class="project-card__actions">
+              <a href="[INSERT_PROJECT_LINK]" class="btn btn--small btn--primary">View Project</a>
+              <a href="[INSERT_GITHUB_LINK]" class="btn btn--small btn--ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__thumb">
+            <img src="assets/projects/project-3.jpg" alt="Project ESP32 IoT dan Embedded System" loading="lazy" onerror="this.parentElement.classList.add('project-card__thumb--fallback')">
+            <div class="project-card__thumb-fallback" aria-hidden="true">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">ESP32 IoT &amp; Embedded System</h3>
+            <p class="project-card__desc">Pengembangan sistem berbasis ESP32 untuk monitoring, komunikasi jaringan, sensor, dan remote control.</p>
+            <ul class="tag-list">
+              <li>ESP32</li><li>C/C++</li><li>Wi-Fi</li><li>MQTT</li><li>HTTP</li><li>WebServer</li>
+            </ul>
+            <div class="project-card__actions">
+              <a href="[INSERT_PROJECT_LINK]" class="btn btn--small btn--primary">View Project</a>
+              <a href="[INSERT_GITHUB_LINK]" class="btn btn--small btn--ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section__inner">
+      <p class="section__eyebrow">// SEC.03 — I0.2</p>
+      <h2 class="section__title">Skills</h2>
+
+      <div class="skills__grid">
+        <div class="skill-block reveal">
+          <h3 class="skill-block__title"><i class="fa-solid fa-industry"></i> Automation</h3>
+          <ul class="skill-tags">
+            <li>PLC Programming</li>
+            <li>Ladder Logic</li>
+            <li>Industrial Automation</li>
+            <li>Factory I/O</li>
+            <li>TIA Portal</li>
+          </ul>
+        </div>
+
+        <div class="skill-block reveal">
+          <h3 class="skill-block__title"><i class="fa-solid fa-bolt"></i> Electronics</h3>
+          <ul class="skill-tags">
+            <li>Electronic Circuit</li>
+            <li>Sensor Integration</li>
+            <li>Microcontroller</li>
+            <li>Troubleshooting</li>
+            <li>PCB</li>
+          </ul>
+        </div>
+
+        <div class="skill-block reveal">
+          <h3 class="skill-block__title"><i class="fa-solid fa-code"></i> Programming</h3>
+          <ul class="skill-tags">
+            <li>C/C++</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Go</li>
+          </ul>
+        </div>
+
+        <div class="skill-block reveal">
+          <h3 class="skill-block__title"><i class="fa-solid fa-tower-broadcast"></i> Communication &amp; IoT</h3>
+          <ul class="skill-tags">
+            <li>Modbus TCP</li>
+            <li>MQTT</li>
+            <li>HTTP</li>
+            <li>WebSocket</li>
+            <li>Wi-Fi</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="section__inner">
+      <p class="section__eyebrow">// SEC.04 — I0.3</p>
+      <h2 class="section__title">Experience &amp; Activities</h2>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <span class="timeline__marker"></span>
+          <div class="timeline__content">
+            <span class="timeline__year">2025</span>
+            <h3 class="timeline__title">Kontes Kapal Indonesia (KKI) 2025</h3>
+            <p class="timeline__desc">[INSERT_DESCRIPTION_KKI_2025]</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__marker"></span>
+          <div class="timeline__content">
+            <span class="timeline__year">2024</span>
+            <h3 class="timeline__title">Kontes Kapal Indonesia (KKI) 2024</h3>
+            <p class="timeline__desc">[INSERT_DESCRIPTION_KKI_2024]</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__marker"></span>
+          <div class="timeline__content">
+            <span class="timeline__year">[INSERT_YEAR]</span>
+            <h3 class="timeline__title">[INSERT_ORGANIZATION]</h3>
+            <p class="timeline__desc">[INSERT_DESCRIPTION]</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__marker"></span>
+          <div class="timeline__content">
+            <span class="timeline__year">[INSERT_YEAR]</span>
+            <h3 class="timeline__title">[INSERT_INTERNSHIP]</h3>
+            <p class="timeline__desc">[INSERT_DESCRIPTION]</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__marker"></span>
+          <div class="timeline__content">
+            <span class="timeline__year">[INSERT_YEAR]</span>
+            <h3 class="timeline__title">[INSERT_CERTIFICATION]</h3>
+            <p class="timeline__desc">[INSERT_DESCRIPTION]</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="education-card reveal">
+        <div class="education-card__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div>
+          <h3 class="education-card__title">Universitas Negeri Jakarta</h3>
+          <p class="education-card__degree">D4 Teknologi Rekayasa Otomasi</p>
+          <p class="education-card__years">2022-2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--contact" id="contact">
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+    <div class="section__inner">
+      <p class="section__eyebrow">// SEC.05 — I0.4</p>
+      <h2 class="section__title">Let's Build Something</h2>
+      <p class="contact__desc reveal">Interested in automation, electronics, and engineering? Feel free to connect with me.</p>
+
+      <div class="contact__grid reveal">
+        <a href="mailto:fr.dwinugroho@gmail.co" class="contact-card">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+          <small>fr.dwinugroho@gmail.com</small>
+        </a>
+        <a href="www.linkedin.com/in/fahrul-ridho-dwinugroho" target="_blank" rel="noopener" class="contact-card">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <span>LinkedIn</span>
+          <small>Fahrul Ridho Dwinugroho</small>
+        </a>
+        <a href="https://github.com/parulll123" target="_blank" rel="noopener" class="contact-card">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+          <small>parulll123</small>
+        </a>
+      </div>
+
+      <a href="mailto:fr.dwinugroho@gmail.com" class="btn btn--primary btn--large reveal">Contact Me <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <p>&copy; 2026 Fahrul Ridho. All Rights Reserved.</p>
+    <div class="footer__links">
+      <a href="https://github.com/parulll123" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="www.linkedin.com/in/fahrul-ridho-dwinugroho" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
